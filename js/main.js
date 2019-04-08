@@ -91,14 +91,9 @@ function addSocialLink(linkObject, parent) {
   var li = addHTMLElement('li', parent);
   var anchor = document.createElement('a');
   anchor.href = linkObject.href;
-  //anchor.text = `<ion-icon name="${linkObject.iconName}"></ion-icon>`;
   li.appendChild(anchor);
-
   var icon = addHTMLElement('ion-icon',anchor);
-  //icon.createAttribute('name');
   icon.setAttribute('name',linkObject.iconName);
 
 
 }
-
-// linkObject.href, linkObject.iconName
