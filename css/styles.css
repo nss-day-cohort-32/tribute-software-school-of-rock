@@ -190,3 +190,11 @@ Media Queries
     width: 70%;
   }
 }
+
+.collabs {
+  display: flex;
+}
+
+.collabs img {
+  height: 10px;
+}
