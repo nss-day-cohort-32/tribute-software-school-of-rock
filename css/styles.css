@@ -131,11 +131,6 @@ nav a {
 
 }
 
-
-
-
-
-
 footer {
   position: absolute;
   height: 40px;
@@ -186,6 +181,27 @@ Media Queries
 
 
 }
+
+/* ----------- News Styles --------------------------- */
+.news-flex-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.news-title{
+  margin: auto;
+  
+}
+
+.news-title h2{
+  font-size: 3em;
+}
+
+.news-content{
+  
+}
+
+
 
 @media screen and (min-width: 900px) {
   header {
