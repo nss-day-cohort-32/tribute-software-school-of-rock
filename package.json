@@ -1,0 +1,19 @@
+{
+  "name": "software-school-of-rock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:nss-day-cohort-32/tribute-software-school-of-rock.git"
+  },
+  "author": "Jimmy Metts, Colin Sandlin, Jake Preston, Joel Venable",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nss-day-cohort-32/tribute-software-school-of-rock/issues"
+  },
+  "homepage": "https://github.com/nss-day-cohort-32/tribute-software-school-of-rock#readme"
+}
