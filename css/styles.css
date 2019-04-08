@@ -94,11 +94,12 @@ img {
   text-decoration: none;
   font-size: .7rem;
   padding: .4rem .8rem;
-  transition: color .3s;
+  transition: all .3s;
+  border-bottom: 1px transparent;
 }
 
 .topNav a:hover {
-  text-decoration-line: underline;
+  border-bottom: 1px solid #CD5924;
   color: #CD5924;
 }
 
@@ -154,6 +155,7 @@ footer ul {
 footer ul li {
   padding: .8rem;
 }
+
 .social-link {
   padding: 1.8rem;
 }
@@ -166,7 +168,11 @@ Media Queries
 ***************************
 */
 
-@media screen and (min-width: 480px) {}
+@media screen and (min-width: 480px) {
+  main {
+    margin: 50px 10% 10px 10%;
+  }
+}
 
 @media screen and (min-width: 760px) {
   header {
