@@ -1,0 +1,88 @@
+/*
+
+https: //www.canva.com/colors/color-palette-generator/
+
+Chocolate: #CD5924
+Saddle Brown: #4D2712
+Brown: #A1392A
+Midnight Blue: #202A80
+Light Slate Gray: #A0A8BB
+
+*/
+
+* {
+  margin: 0;
+}
+
+.topNav {
+  height: 50px;
+  width: 100%;
+  background-color: #a0a8bb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+
+}
+
+.topNav a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin-right: 75px;
+  margin-left: 75px;
+}
+
+.topNav a:hover {
+  text-decoration-line: underline;
+}
+
+.topNav a:active {
+  color: #202A80;
+}
+
+
+
+body {
+  background-color: #A0A8BB;
+}
+
+
+.flex-container {
+  display: flex;
+}
+
+.flex-item {
+
+}
+
+header {
+  background-color: #202A80;
+  color: white
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
+
+header h1 {
+
+}
+
+footer {
+  position: absolute;
+  height: 40px;
+
+}

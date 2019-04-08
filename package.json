@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/nss-day-cohort-32/tribute-software-school-of-rock/issues"
   },
-  "homepage": "https://github.com/nss-day-cohort-32/tribute-software-school-of-rock#readme"
+  "homepage": "https://github.com/nss-day-cohort-32/tribute-software-school-of-rock#readme",
+  "devDependencies": {}
 }
