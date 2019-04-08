@@ -187,6 +187,7 @@ Media Queries
   display: flex;
   justify-content: center;
   flex-direction: column;
+  max-width: 80%;
 }
 .news-title{
   margin: auto;
