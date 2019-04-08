@@ -243,3 +243,35 @@ Media Queries
     width: 70%;
   }
 }
+
+.collabs, .collab-img-wrap{
+  display: flex;
+
+}
+
+
+.collabs li {
+  padding: 10px;
+  list-style-type: none;
+} 
+
+
+
+@media screen and (max-width: 1280px) {
+  .collabs, .collab-img-wrap {
+    flex-direction: column;
+  }
+}
+
+ .img-wrap1 {
+  flex: 1.778;
+}
+
+.img-wrap2 {
+  flex: 1.512;
+}
+
+.img-wrap3 {
+  flex: 1.554;
+}
+
