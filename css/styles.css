@@ -248,3 +248,7 @@ Media Queries
   flex: 1.554;
 }
 
+.img-wrap1:hover {
+  flex: 1.778;
+  color: red;
+}
