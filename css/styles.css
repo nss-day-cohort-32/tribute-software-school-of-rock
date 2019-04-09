@@ -160,7 +160,40 @@ footer ul li {
 .social-link {
   padding: 1.8rem;
 }
+/*  
+***************************
+Career
+***************************
+*/
 
+.disc-item {
+  display: flex;
+
+}
+
+.disc-img {
+  flex-basis: 40%;
+  height: auto;
+  margin: .7rem;
+}
+
+.disc-img img {
+  width: 100%;
+  height: auto;
+}
+
+.disc-text {
+  margin: 1rem 1rem;
+}
+
+.disc-text h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.disc-text p {
+  margin-bottom: .4rem;
+}
 
 
 /*  

@@ -1,6 +1,5 @@
 const header = document.querySelector('header'),
   footer = document.querySelector('footer'),
-  discography = document.getElementById('discography'),
   navItems = [{
       "href": "/",
       "title": "Home"
@@ -58,7 +57,7 @@ socialItems.forEach(item => {
   addSocialLink(item, ul);
 })
 
-addAlbum("Santana",1969,"Double Platinum",'./img/albums/santana-1969.png');
+
 
 
 
@@ -98,17 +97,3 @@ function addSocialLink(linkObject, parent) {
 
 }
 
-
-function addAlbum(albumTitle,releaseYear,sales,imgUrl) {
-  let div = addHTMLElement('div',discography,'',['disc-item']);
-  let imgDiv = addHTMLElement('div',div,'',['disc-img']);
-  let img = document.createElement('img');
-  img.src = imgUrl;
-  img.alt = `Santana Album: ${albumTitle} (${releaseYear})`;
-  imgDiv.appendChild(img);
-  addHTMLElement('h4',div,albumTitle,[]);
-  addHTMLElement('p',div,`Released: ${releaseYear}`);
-  addHTMLElement('p',div,`Album Status: ${sales}`);
-  
-
-}
