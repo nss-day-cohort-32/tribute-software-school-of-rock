@@ -268,9 +268,6 @@ Hero image hover effects
   margin-top: 20px;
 }
 
-.text--light {
-  color: #bfced5;
-}
 
 /*
 hero additional
@@ -303,40 +300,43 @@ More Information on Homepage
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 /* ----------- News Styles --------------------------- */
-.news-container{
+.news-container {
   margin-top: .5em;
   box-shadow: 0 8px 6px -6px black;
   background: rgb(255, 255, 255);
   border-radius: 2em;
   padding: 1em;
-  }
-
-.news-title {
-    text-align: center;
-    font-size: 3em;
-    padding: none;
-    margin: auto;
 }
 
-.news-title h2{
+.news-title {
+  text-align: center;
+  font-size: 3em;
+  padding: none;
+  margin: auto;
+}
+
+.news-title h2 {
   font-size: 3em;
 }
 
-.news-item{
+.news-item {
   flex-direction: column;
 }
 
-.news-item-top{
+.news-item-top {
   display: flex;
   justify-content: space-between;
 }
-.news-img{
+
+.news-img {
   padding: .1em;
   border-radius: 2em;
 }
-.news-content{
-  padding: .5em 
+
+.news-content {
+  padding: .5em
 }
 
 /*  
@@ -404,7 +404,13 @@ Media Queries
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    font-weight: 300;
   }
+
+  .text--light {
+    color: #bfced5;
+  }
+
 
   .overlay {
     position: static;
@@ -455,20 +461,24 @@ Media Queries
     font-size: 1rem;
     letter-spacing: 2px;
   }
-  .news-item{
+
+  .news-item {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .news-img{
+
+  .news-img {
     height: 200px;
     width: 200px;
-    
+
   }
-  .news-item-top{
+
+  .news-item-top {
     flex: 2 100%;
   }
-  .news-content{
-    flex: 1 ;
+
+  .news-content {
+    flex: 1;
   }
 }
 
