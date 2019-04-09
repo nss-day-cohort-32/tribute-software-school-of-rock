@@ -15,6 +15,8 @@ https: //www.canva.com/colors/color-palette-generator/
   margin: 0;
 }
 
+
+
 body {
   background-color: #F0E9DF;
   font-family: 'Barlow',
@@ -222,7 +224,7 @@ Hero image hover effects
   position: static;
   z-index: -1;
   width: 100vw;
-  margin: 0px;
+  /* margin: 0px; */
 }
 
 .hero-img {
@@ -231,39 +233,28 @@ Hero image hover effects
   height: auto;
 }
 
-.overlay {
-  position: static;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 3s ease;
-  z-index: -1;
-}
+
 
 .hero-img-wrapper:hover .overlay {
   opacity: 1;
 }
 
-.text {
+ .text {
   color: #2B384F;
-  font-size: 6em;
+  font-size: 2em;
   font-family: 'Vollkorn',
     serif;
-  font-weight: 500;
-  position: relative;
-  z-index: -1;
-  top: 50%;
-  left: 30%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
   text-align: center;
-}
+  line-height: 1em;
+  margin-top: 20px;
+} 
 
+/*
+hero additional
+*/
+header + * {
+  margin-top: 70px;
+}
 
 
 /*  
@@ -307,7 +298,7 @@ Media Queries
     height: 50px;
   }
 
-  main {
+  header + * {
     margin-top: 50px;
   }
 
@@ -347,6 +338,21 @@ Media Queries
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+ .overlay {
+    position: static;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 3s ease;
+    z-index: -1;
+  } 
+
+
 
 
 }
@@ -442,8 +448,9 @@ Media Queries
  
 }
 
+
 .mapouter{
-  position: static;
+  position: relative;
   text-align: right;
   height: 500px;
   width: 600px;
@@ -497,3 +504,4 @@ Media Queries
 .hero-img {
   width: 100%;
 }
+
