@@ -280,6 +280,41 @@ More Information on Homepage
   padding-top: 30px;
   padding-bottom: 30px;
 }
+/* ----------- News Styles --------------------------- */
+.news-container{
+  margin-top: .5em;
+  box-shadow: 0 8px 6px -6px black;
+  background: rgb(255, 255, 255);
+  border-radius: 2em;
+  padding: 1em;
+  }
+
+.news-title {
+    text-align: center;
+    font-size: 3em;
+    padding: none;
+    margin: auto;
+}
+
+.news-title h2{
+  font-size: 3em;
+}
+
+.news-item{
+  flex-direction: column;
+}
+
+.news-item-top{
+  display: flex;
+  justify-content: space-between;
+}
+.news-img{
+  padding: .1em;
+  border-radius: 2em;
+}
+.news-content{
+  padding: .5em 
+}
 
 /*  
 ***************************
@@ -357,37 +392,7 @@ Media Queries
 
 }
 
-/* ----------- News Styles --------------------------- */
-.news-container{
-  margin-top: 2em;
-  box-shadow: 0 8px 6px -6px black;
-  background: #CCC9C6;
-  border-radius: 2em;
-  padding: 1em;
-  }
 
-.news-title {
-    text-align: center;
-    font-size: 2em;
-}
-
-.news-title{
-  margin: auto;
-  
-}
-
-.news-title h2{
-  font-size: 3em;
-}
-
-.news-item{
-  flex-direction: column;
-}
-
-.news-item-top{
-  display: flex;
-  justify-content: space-between;
-}
 
 @media screen and (min-width: 900px) {
 
@@ -406,13 +411,21 @@ Media Queries
     font-size: 1rem;
     letter-spacing: 2px;
   }
-
   .news-item{
     flex-direction: row;
     flex-wrap: wrap;
-
   }
-
+  .news-img{
+    height: 200px;
+    width: 200px;
+    
+  }
+  .news-item-top{
+    flex: 2 100%;
+  }
+  .news-content{
+    flex: 1 ;
+  }
 }
 
 @media screen and (min-width: 1200px) {
