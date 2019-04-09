@@ -76,6 +76,7 @@ header {
   height: 70px;
   flex-direction: column;
   position: static;
+  overflow: hidden;
 }
 
 .header-container h1 {
