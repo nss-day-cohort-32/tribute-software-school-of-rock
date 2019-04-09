@@ -161,7 +161,78 @@ footer ul li {
   padding: 1.8rem;
 }
 
+/*
+**************************
+Hero image hover effects
+**************************
+*/
 
+.hero-img-wrapper {
+  position: static;
+  width: 100%;
+  margin: 0px;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: static;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 3s ease;
+}
+
+.hero-img-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 6em;
+  font-family: 'Vollkorn',
+    serif;
+  font-weight: 500;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*  
+***************************
+More Information on Homepage
+***************************
+*/
+
+.info {
+  width: 50%;
+}
+
+.location {
+  height: 1.75em;
+  width: auto;
+}
+
+.alias_city {
+  align-content: center;
+}
+
+.collabs-bckgrnd {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 /*  
 ***************************
@@ -207,6 +278,18 @@ Media Queries
   .topNav a {
     font-size: .8rem;
     letter-spacing: 2px;
+  }
+
+  .text {
+    color: white;
+    font-size: 5em;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
 
 
@@ -269,43 +352,73 @@ Media Queries
 
 @media screen and (min-width: 1200px) {
   .header-container {
-    width: 70%;
+    width: 80%;
 
   }
 
   .collabs,
   .collab-img-wrap {
     display: flex;
+    
 
   }
 
+  .collabs {
+    padding: 0px;
+    margin: 0px;
+  }
 
   .collabs li {
     padding: 10px;
     list-style-type: none;
   }
+
+  .collabs li img {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .collabs:first-child {
+    padding: 0px;
+    list-style-type: none;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+}
+
+.mapouter{
+  position: static;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none!important;
+  height: 500px;
+  width: 600px;
+}
+
+.collab-img-wrap {
+  padding: 5px;
+  padding-bottom: 30%;
+  height: auto;
+  margin-right: 10px;
+  height: 20%;
 }
 
 
-
-@media screen and (max-width: 1280px) {
-
-  .collabs,
-  .collab-img-wrap {
-    flex-direction: column;
-
-  }
-
-  .img-wrap1 {
-    flex: 1.778;
-  }
-
-  .img-wrap2 {
-    flex: 1.512;
-  }
-
-  .img-wrap3 {
-    flex: 1.554;
-  }
-
+.collabs-title {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+  margin-top: 50px;
 }
