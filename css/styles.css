@@ -2,11 +2,12 @@
 
 https: //www.canva.com/colors/color-palette-generator/
 
-Chocolate: #CD5924
-Saddle Brown: #4D2712
-Brown: #A1392A
-Midnight Blue: #202A80
-Light Slate Gray: #A0A8BB
+ Light Blue: #7588A3 
+ Dark Blue: #2B384F 
+ Light Brown: #BD8353 
+ Dark Brown: #A15B43 
+ Light Bckgrnd: #F0E9DF 
+ Tonal Bckgrnd: #CCC9C6 
 
 */
 
@@ -15,7 +16,7 @@ Light Slate Gray: #A0A8BB
 }
 
 body {
-  background-color: #A0A8BB;
+  background-color: #F0E9DF;
   font-family: 'Barlow',
     sans-serif;
 }
@@ -28,6 +29,15 @@ h1,
 h2 {
   font-family: 'Vollkorn',
     serif;
+  color: #2B384F;
+}
+
+h3 {
+  
+    font-family: 'Vollkorn',
+      serif;
+    color: #2B384F;
+
 }
 
 h2 {
@@ -35,9 +45,16 @@ h2 {
   padding-bottom: 10px;
 }
 
+p {
+  color: #BD8353;
+  font-family: 'Barlow',
+    sans-serif;
+
+}
+
 header,
 footer {
-  background-color: #202A80;
+  background-color: #2B384F;
   color: white;
   width: 100vw;
 }
@@ -47,6 +64,7 @@ header {
   height: 70px;
   top: 0;
   left: 0;
+  z-index: 5;
 }
 
 
@@ -64,6 +82,7 @@ header {
   font-size: 1.4rem;
   text-align: center;
   margin: .5rem 0 .5rem 0;
+  color: white;
 }
 
 img {
@@ -84,7 +103,6 @@ img {
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
-
 }
 
 .topNav a {
@@ -95,16 +113,16 @@ img {
   font-size: .7rem;
   padding: .4rem .8rem;
   transition: all .3s;
-  border-bottom: 1px solid #202A80;
+  border-bottom: 1px solid #2B384F;
 }
 
 .topNav a:hover {
-  border-bottom: 1px solid #CD5924;
-  color: #CD5924;
+  border-bottom: 1px solid #BD8353 ;
+  color: #BD8353 ;
 }
 
 .topNav a:active {
-  color: #202A80;
+  color: #A15B43;
 }
 
 
@@ -159,6 +177,7 @@ footer ul li {
 
 .social-link {
   padding: 1.8rem;
+  fill: #7588A3;
 }
 
 /*
@@ -169,6 +188,7 @@ Hero image hover effects
 
 .hero-img-wrapper {
   position: static;
+  z-index: -1;
   width: 100%;
   margin: 0px;
 }
@@ -189,6 +209,7 @@ Hero image hover effects
   width: 100%;
   opacity: 0;
   transition: 3s ease;
+  z-index: -1;
 }
 
 .hero-img-wrapper:hover .overlay {
@@ -196,12 +217,13 @@ Hero image hover effects
 }
 
 .text {
-  color: white;
+  color: #2B384F;
   font-size: 6em;
   font-family: 'Vollkorn',
     serif;
   font-weight: 500;
-  position: absolute;
+  position: relative;
+  z-index: -1;
   top: 50%;
   left: 30%;
   -webkit-transform: translate(-50%, -50%);
@@ -281,7 +303,7 @@ Media Queries
   }
 
   .text {
-    color: white;
+    color: #2B384F;
     font-size: 5em;
     position: absolute;
     top: 50%;
