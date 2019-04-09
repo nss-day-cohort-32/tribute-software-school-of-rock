@@ -264,6 +264,8 @@ Hero image hover effects
   text-align: center;
 }
 
+
+
 /*  
 ***************************
 More Information on Homepage
@@ -437,12 +439,18 @@ Media Queries
     list-style-type: none;
   }
 
+  .hero-img-wrapper {
+    display: flex;
+    position: relative;
+  }
+
   .hero-img {
     width: 100%;
     height: auto;
     margin: 0px;
     margin-bottom: 30px;
-    margin-top: 0px;
+    margin-top: 50px;
+    position: relative;
   }
 }
 
