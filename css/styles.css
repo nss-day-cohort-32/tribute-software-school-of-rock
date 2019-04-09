@@ -181,6 +181,7 @@ footer ul li {
   padding: 1.8rem;
   fill: #7588A3;
 }
+
 /*  
 ***************************
 Career
@@ -189,6 +190,7 @@ Career
 
 .disc-item {
   display: flex;
+  align-items: center;
 }
 
 .disc-img {
@@ -207,13 +209,15 @@ Career
 }
 
 .disc-text h4 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  font-size: 1rem;
+  margin-bottom: .7rem;
 }
 
 .disc-text p {
+  font-size: .8rem;
   margin-bottom: .4rem;
 }
+
 /*
 **************************
 Hero image hover effects
@@ -291,6 +295,16 @@ Media Queries
   main {
     margin: 70px 10% 10px 10%;
   }
+
+  .disc-text h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .disc-text p {
+    font-size: 1rem;
+    margin-bottom: .4rem;
+  }
 }
 
 @media screen and (min-width: 760px) {
@@ -355,39 +369,44 @@ Media Queries
 
 
 
+  #discography {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
 }
 
 /* ----------- News Styles --------------------------- */
-.news-container{
+.news-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  }
+}
 
-  .news-title{
-    text-align: center;
-    font-size: 2em;
-  }
+.news-title {
+  text-align: center;
+  font-size: 2em;
+}
 
-.news-title{
+.news-title {
   margin: auto;
-  
+
 }
 
-.news-title h2{
+.news-title h2 {
   font-size: 3em;
-  
+
 }
 
-.news-item{
+.news-item {
   flex-direction: column;
 }
 
-.news-content span{
+.news-content span {
   white-space: nowrap;
 }
 
-.news-img-container{
+.news-img-container {
   flex: 0 0 40%;
 }
 
@@ -421,7 +440,7 @@ Media Queries
   .collabs,
   .collab-img-wrap {
     display: flex;
-    
+
 
   }
 
@@ -448,16 +467,16 @@ Media Queries
  
 }
 
-
-.mapouter{
-  position: relative;
+.mapouter {
+  position: static;
   text-align: right;
   height: 500px;
   width: 600px;
 }
+
 .gmap_canvas {
   overflow: hidden;
-  background: none!important;
+  background: none !important;
   height: 500px;
   width: 600px;
 }
@@ -476,7 +495,7 @@ Media Queries
 .column {
   float: left;
   padding: 10px;
-  height: 200px; 
+  height: 200px;
 }
 
 
