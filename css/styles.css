@@ -329,7 +329,7 @@ More Information on Homepage
 
 .news-item-top{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .news-img{
   padding: .1em;
