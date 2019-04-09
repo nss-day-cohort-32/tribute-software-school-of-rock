@@ -329,20 +329,17 @@ Media Queries
 
 /* ----------- News Styles --------------------------- */
 .news-container{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 1em;
+  margin-top: 2em;
   box-shadow: 0 8px 6px -6px black;
   background: #CCC9C6;
   border-radius: 2em;
   padding: 1em;
   }
 
-  .news-title{
+.news-title {
     text-align: center;
     font-size: 2em;
-  }
+}
 
 .news-title{
   margin: auto;
@@ -351,22 +348,16 @@ Media Queries
 
 .news-title h2{
   font-size: 3em;
-  
 }
 
 .news-item{
   flex-direction: column;
 }
 
-.news-content span{
-  white-space: nowrap;
+.news-item-top{
+  display: flex;
+  justify-content: space-between;
 }
-
-.news-img-container{
-  flex: 0 0 40%;
-}
-
-
 
 @media screen and (min-width: 900px) {
 
@@ -385,6 +376,13 @@ Media Queries
     font-size: 1rem;
     letter-spacing: 2px;
   }
+
+  .news-item{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
