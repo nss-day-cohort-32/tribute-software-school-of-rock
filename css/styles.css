@@ -339,6 +339,14 @@ More Information on Homepage
   padding: .5em 
 }
 
+.page__content >* {
+    padding: .8rem; 
+}
+
+.img-container {
+  flex: 0 0 15%;
+
+}
 /*  
 ***************************
 Media Queries
@@ -533,7 +541,7 @@ Media Queries
   width: 75%;
 }
 
-/* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
