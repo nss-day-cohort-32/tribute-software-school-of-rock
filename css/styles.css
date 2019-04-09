@@ -414,8 +414,8 @@ Media Queries
 }
 
 
-}
-/* Create two unequal columns that floats next to each other */
+
+
 .column {
   float: left;
   padding: 10px;
@@ -428,7 +428,7 @@ Media Queries
   width: 75%;
 }
 
-/* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
@@ -441,3 +441,4 @@ Media Queries
   margin-bottom: 80px;
   margin-top: 50px;
 }
+
