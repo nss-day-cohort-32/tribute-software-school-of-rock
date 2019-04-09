@@ -301,7 +301,10 @@ Media Queries
   justify-content: center;
   flex-direction: column;
   margin-top: 1em;
-  box-shadow: 0 8px 6px -6px black
+  box-shadow: 0 8px 6px -6px black;
+  background: #CCC9C6;
+  border-radius: 2em;
+  padding: 1em;
   }
 
   .news-title{
