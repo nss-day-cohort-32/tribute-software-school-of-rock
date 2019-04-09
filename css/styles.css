@@ -15,10 +15,10 @@ https: //www.canva.com/colors/color-palette-generator/
   margin: 0;
 }
 
-li {
+.collabs li {
   list-style-type: none;
 }
-ul {
+.collabs {
   margin: none;
   padding: none;
   list-style-type: none;
