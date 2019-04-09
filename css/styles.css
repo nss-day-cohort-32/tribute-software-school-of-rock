@@ -179,7 +179,39 @@ footer ul li {
   padding: 1.8rem;
   fill: #7588A3;
 }
+/*  
+***************************
+Career
+***************************
+*/
 
+.disc-item {
+  display: flex;
+}
+
+.disc-img {
+  height: auto;
+  margin: .7rem;
+  flex: 0 0 30%;
+}
+
+.disc-img img {
+  width: 100%;
+  height: auto;
+}
+
+.disc-text {
+  margin: 1rem 1rem;
+}
+
+.disc-text h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.disc-text p {
+  margin-bottom: .4rem;
+}
 /*
 **************************
 Hero image hover effects
@@ -436,7 +468,7 @@ Media Queries
 }
 
 
-}
+
 /* Create two unequal columns that floats next to each other */
 .column {
   float: left;
@@ -455,6 +487,8 @@ Media Queries
   content: "";
   display: table;
   clear: both;
+}
+
 .collabs-title {
   display: flex;
   justify-items: center;

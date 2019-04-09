@@ -63,7 +63,6 @@ socialItems.forEach(item => {
 
 
 
-
 function addLink(linkObject, parent) {
   var link = document.createElement('a');
   link.href = linkObject.href;
@@ -97,3 +96,4 @@ function addSocialLink(linkObject, parent) {
 
 
 }
+
