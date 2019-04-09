@@ -244,6 +244,42 @@ Media Queries
 
 }
 
+/* ----------- News Styles --------------------------- */
+.news-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  }
+
+  .news-title{
+    text-align: center;
+    font-size: 2em;
+  }
+
+.news-title{
+  margin: auto;
+  
+}
+
+.news-title h2{
+  font-size: 3em;
+  
+}
+
+.news-item{
+  flex-direction: column;
+}
+
+.news-content span{
+  white-space: nowrap;
+}
+
+.news-img-container{
+  flex: 0 0 40%;
+}
+
+
+
 @media screen and (min-width: 900px) {
 
   .header-container {
