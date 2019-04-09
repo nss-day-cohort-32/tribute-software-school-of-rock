@@ -168,13 +168,12 @@ Career
 
 .disc-item {
   display: flex;
-
 }
 
 .disc-img {
-  flex-basis: 40%;
   height: auto;
   margin: .7rem;
+  flex: 0 0 30%;
 }
 
 .disc-img img {
