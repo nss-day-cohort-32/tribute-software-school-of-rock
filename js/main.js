@@ -38,6 +38,7 @@ const socialItems = [{
 ];
 
 
+
 //  Create the Header
 var div = addHTMLElement('div', header, '', ['flex-container', 'header-container']);
 addHTMLElement('h1', div, "Carlos Santana");
@@ -59,9 +60,12 @@ socialItems.forEach(item => {
 
 
 
+show();
 
-
-
+function show() {
+  titleBox = document.querySelector('.overlay');
+  titleBox.style.opacity = '1';
+}
 
 function addLink(linkObject, parent) {
   var link = document.createElement('a');

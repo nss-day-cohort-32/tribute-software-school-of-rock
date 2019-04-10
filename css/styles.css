@@ -18,6 +18,7 @@ https: //www.canva.com/colors/color-palette-generator/
 .collabs li {
   list-style-type: none;
 }
+
 .collabs {
   margin: none;
   padding: none;
@@ -121,8 +122,7 @@ img {
   color: #a15b43;
 }
 
-.flex-item {
-}
+.flex-item {}
 
 nav a {
   text-decoration: none;
@@ -190,7 +190,6 @@ Career
 
 .disc-img {
   height: auto;
-  margin: 0.7rem;
   flex: 0 0 30%;
 }
 
@@ -232,9 +231,6 @@ Hero image hover effects
   height: auto;
 }
 
-.hero-img-wrapper:hover .overlay {
-  opacity: 1;
-}
 
 .text {
   color: #2B384F;
@@ -286,15 +282,17 @@ More Information on Homepage
 
 
 
-.info h2, .info div, .info p {
+.info h2,
+.info div,
+.info p {
   align-content: center;
   justify-content: center;
   text-align: center;
 }
 
-.info .kA {
+/* .info .kA {
   align-self: ;
-}
+} */
 
 .collabs-bckgrnd {
   padding-top: 30px;
@@ -339,14 +337,36 @@ More Information on Homepage
   padding: .5em
 }
 
-.page__content >* {
-    padding: .8rem; 
+.page__content>* {
+  padding: .8rem;
+}
+
+
+
+.personal-item {
+  flex-direction: column;
+  align-items: center;
 }
 
 .img-container {
-  flex: 0 0 15%;
-
+  width: 60%;
+  margin-top: 10px;
 }
+
+
+.page__content {
+  line-height: 1.3;
+}
+
+.page__content ul li {
+  color: #bd8353;
+  line-height: 1.5;
+}
+
+#discography>* {
+  margin-bottom: 10px;
+}
+
 /*  
 ***************************
 Media Queries
@@ -367,6 +387,16 @@ Media Queries
     font-size: 1rem;
     margin-bottom: .4rem;
   }
+
+  .personal-item {
+    flex-direction: row;
+  }
+
+  .img-container {
+    flex: 0 0 28%;
+    margin: 10px;
+  }
+
 }
 
 @media screen and (min-width: 760px) {
@@ -417,6 +447,7 @@ Media Queries
 
   .text--light {
     color: #bfced5;
+    text-shadow: 4px 4px 4px rgba(43,56,79,1);
   }
 
 
@@ -433,13 +464,33 @@ Media Queries
     z-index: -1;
   }
 
+  .page__image {
+    display: flex;
+  }
 
+  .page__image div {
+    width: 100%;
+    height: auto;
+    margin: 1rem;
+  }
+
+  .img-container {
+    flex-basis: 20%;
+  }
 
 
   #discography {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  #discography>* {
+    flex: 0 0 50%;
+  }
+
+
+
 
   footer {
     flex-direction: row;
@@ -484,6 +535,10 @@ Media Queries
   .news-content {
     flex: 1;
   }
+
+  body {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -517,6 +572,8 @@ Media Queries
     padding: 0px;
     list-style-type: none;
   }
+
+
 }
 
 .map-responsive {
@@ -525,6 +582,7 @@ Media Queries
   position: relative;
   height: 0;
 }
+
 .map-responsive iframe {
   left: 0;
   top: 0;
@@ -571,6 +629,7 @@ Media Queries
   width: 100%;
 }
 
-.info h2, .info p{
- margin-top: 30px;
+.info h2,
+.info p {
+  margin-top: 30px;
 }
