@@ -326,8 +326,10 @@ More Information on Homepage
 
 .news-item-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: .2em;
 }
+
 
 .news-img {
   padding: .1em;
@@ -354,6 +356,16 @@ More Information on Homepage
   margin-top: 10px;
 }
 
+.checked {
+  color: orange;
+}
+
+.news-rating{
+  display: flex;
+  justify-content: center;
+
+}
+
 
 .page__content {
   line-height: 1.3;
@@ -368,6 +380,67 @@ More Information on Homepage
   margin-bottom: 10px;
 }
 
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 200%;
+  width: 200%;
+  position: absolute;
+}
+
+.collab-img-wrap {
+  padding: 5px;
+  padding-bottom: 5%;
+  height: auto;
+  height: 20%;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 200px;
+}
+
+.right {
+  width: 75%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.collabs-title {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.info h2,
+.info p {
+  margin-top: 30px;
+}
+
+h5{
+  color: #2B384F;
+}
 /*  
 ***************************
 Media Queries
@@ -495,6 +568,29 @@ Media Queries
     }
 
 
+  .topNav a {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  .news-item{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .news-img{
+    height: 200px;
+    width: 200px;
+    
+  }
+  .news-item-top{
+    flex: 2 100%;
+  }
+  .news-content{
+    flex: 1;
+  }
+  .news-rating{
+    align-self: flex-end;
+  }
+
 
 
     footer {
@@ -581,60 +677,4 @@ Media Queries
 
   }
 
-  .map-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-  }
-
-  .map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 200%;
-    width: 200%;
-    position: absolute;
-  }
-
-  .collab-img-wrap {
-    padding: 5px;
-    padding-bottom: 5%;
-    height: auto;
-    height: 20%;
-  }
-
-  /* Create two unequal columns that floats next to each other */
-  .column {
-    float: left;
-    padding: 10px;
-    height: 200px;
-  }
-
-  .right {
-    width: 75%;
-  }
-
-
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .collabs-title {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 80px;
-    margin-top: 50px;
-  }
-
-  .hero-img {
-    width: 100%;
-  }
-
-  .info h2,
-  .info p {
-    margin-top: 30px;
-  }
+  
