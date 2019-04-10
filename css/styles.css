@@ -330,7 +330,9 @@ More Information on Homepage
 .news-item-top{
   display: flex;
   justify-content: space-around;
+  padding: .2em;
 }
+
 .news-img{
   padding: .1em;
   border-radius: 2em;
@@ -345,7 +347,14 @@ More Information on Homepage
 
 .img-container {
   flex: 0 0 15%;
+}
+.checked {
+  color: orange;
+}
 
+.news-rating{
+  display: flex;
+  justify-content: center;
 }
 /*  
 ***************************
@@ -472,7 +481,10 @@ Media Queries
     flex: 2 100%;
   }
   .news-content{
-    flex: 1 ;
+    flex: 1;
+  }
+  .news-rating{
+    align-self: flex-end;
   }
 }
 
