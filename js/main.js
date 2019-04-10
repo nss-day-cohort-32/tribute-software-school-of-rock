@@ -51,7 +51,10 @@ navItems.forEach(item => {
 
 //  Create the footer
 footer.classList.add('flex-container');
-addHTMLElement('span', footer, '&copy; 2019 Software School of Rock!');
+var copy = document.createElement('span');
+copy.innerHTML = '&copy;2019 Software School of Rock';
+footer.appendChild(copy);
+
 addHTMLElement('h4', footer, 'Connect with Carlos:');
 var ul = addHTMLElement('ul', footer, '', ['flex-container']);
 socialItems.forEach(item => {
