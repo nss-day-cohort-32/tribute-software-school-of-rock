@@ -568,7 +568,7 @@ Media Queries
  margin-top: 30px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1280px) {
   .exec-info {
     flex-wrap: nowrap;
   }
