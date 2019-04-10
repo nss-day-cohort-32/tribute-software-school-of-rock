@@ -38,6 +38,7 @@ const socialItems = [{
 ];
 
 
+
 //  Create the Header
 var div = addHTMLElement('div', header, '', ['flex-container', 'header-container']);
 addHTMLElement('h1', div, "Carlos Santana");
@@ -50,7 +51,10 @@ navItems.forEach(item => {
 
 //  Create the footer
 footer.classList.add('flex-container');
-addHTMLElement('span', footer, '&copy; 2019 Software School of Rock!');
+var copy = document.createElement('span');
+copy.innerHTML = '&copy;2019 Software School of Rock';
+footer.appendChild(copy);
+
 addHTMLElement('h4', footer, 'Connect with Carlos:');
 var ul = addHTMLElement('ul', footer, '', ['flex-container']);
 socialItems.forEach(item => {
@@ -59,9 +63,12 @@ socialItems.forEach(item => {
 
 
 
+show();
 
-
-
+function show() {
+  titleBox = document.querySelector('.overlay');
+  titleBox.style.opacity = '1';
+}
 
 function addLink(linkObject, parent) {
   var link = document.createElement('a');
