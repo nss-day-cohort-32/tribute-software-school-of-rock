@@ -17,12 +17,23 @@
 <body>
 
   <header></header>
-      <div class="hero-img-wrapper">
-        <img class="hero-img" src="img/Carlos-santana-vegas-residency-sm.jpg">
-        <div class="overlay">
-          <h2 class="text text--light">Career</h2>
-        </div>
-      </div>
+  <div class="hero-img-wrapper">
+    <!--<img class="hero-img" src="img/Carlos-santana-vegas-residency-sm.jpg"> -->
+    <figure>
+      <picture>
+        <source media="(min-width: 900px)" srcset="img/career-wide-lowres.jpg, img/career-wide.jpg 2x">
+        <source media="(min-width: 480px)" srcset="img/career-narrow-lowres.jpg, img/career-narrow.jpg 2x">
+        <img src="img/career-mobile-lowres.jpg" srcset="img/career-mobile.jpg" alt="Carlos Santana performs in Milano">
+      </picture>
+      <figcaption>
+        Carlos Santana performs in Milano. Photo by <a href="https://www.flickr.com/photos/rockonit/9374099375/">Davide
+          Merli</a>
+      </figcaption>
+    </figure>
+    <div class="overlay">
+      <h2 class="text text--light">Career</h2>
+    </div>
+  </div>
   <main class="flex-container">
     <article class="page">
       <section class="page__content">
@@ -63,9 +74,9 @@
           <li>Las Vegas, Nevada (2010 - Present)</li>
         </ul>
       </section>
-      <section class="collaborators page__content"> 
+      <section class="collaborators page__content">
         <h3>Carlos Santana has extensively collaborated...</h3>
-        <p>with numerous well-known musicians.  Here are some of his most famous:</p>
+        <p>with numerous well-known musicians. Here are some of his most famous:</p>
         <ul>
           <li>"Maria Maria" featuring The Product</li>
           <li>"Necio" featuring Romeo Santos</li>
@@ -79,19 +90,36 @@
 
       <section class="awards page__content">
         <h3>List of Awards</h3>
-        <p>Among numerous accolades from various organizations, Carlos Santana is most notable for his 10 Grammy Awards:</p>
+        <p>Among numerous accolades from various organizations, Carlos Santana is most notable for his 10 Grammy Awards:
+        </p>
         <ul>
-          <li><h5>"Blues for Salvador"</h5>Best Rock Instrumental Performance</li>
-          <li><h5>"Smooth" with Rob Thomas</h5>Record of the Year<br/>Best Pop Collaboration with Vocals</li>
-          <li><h5>Supernatural</h5>Album of the Year<br/>Best Rock Album</li>
-          <li><h5>"Maria Maria" with The Product</h5>Best Pop Performance by a Duo or Group with Vocal</li>
-          <li><h5>"El Farol"</h5>Best Pop Instrumental Performance</li>
-          <li><h5>"The Calling" with Eric Clapton</h5>Best Rock Instrumental Performance</li>
-          <li><h5>"Put Your Lights On" with Everlast</h5>Best Rock Vocal Performance by a Duo or Group</li>
+          <li>
+            <h5>"Blues for Salvador"</h5>Best Rock Instrumental Performance
+          </li>
+          <li>
+            <h5>"Smooth" with Rob Thomas</h5>Record of the Year<br />Best Pop Collaboration with Vocals
+          </li>
+          <li>
+            <h5>Supernatural</h5>Album of the Year<br />Best Rock Album
+          </li>
+          <li>
+            <h5>"Maria Maria" with The Product</h5>Best Pop Performance by a Duo or Group with Vocal
+          </li>
+          <li>
+            <h5>"El Farol"</h5>Best Pop Instrumental Performance
+          </li>
+          <li>
+            <h5>"The Calling" with Eric Clapton</h5>Best Rock Instrumental Performance
+          </li>
+          <li>
+            <h5>"Put Your Lights On" with Everlast</h5>Best Rock Vocal Performance by a Duo or Group
+          </li>
           <li>
             <h5>"Love of My Life" with Dave Matthews & Carter Beauford</h5>Best Pop Collaboration with Vocals
           </li>
-          <li><h5>"The Game of Love" with Michelle Branch</h5>Best Pop Collaboration with Vocals</li>
+          <li>
+            <h5>"The Game of Love" with Michelle Branch</h5>Best Pop Collaboration with Vocals
+          </li>
         </ul>
         <p>Carlos Santana also earned a Hollywood Walk of Fame Star in 1997, located at 7080 Hollywood Blvd.</p>
       </section>
